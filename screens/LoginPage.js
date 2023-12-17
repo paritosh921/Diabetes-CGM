@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Pressable,
   BackHandler,
+  Image,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -122,6 +123,11 @@ const LoginPage = () => {
 
   return (
     <View>
+      <Image
+        source={require('../assets/addData.png')}
+        style={styles.img}
+      />
+      <View style={styles.main}>
       {showDatePicker && (
         <DateTimePicker
           mode="date"
@@ -181,11 +187,15 @@ const LoginPage = () => {
       >
         <Text>Go Back</Text>
       </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  main: {
+    bottom:'25%'
+  },
   input: {
     width: "80%",
     height: 55,
@@ -206,6 +216,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 30,
     alignSelf: "center",
+  },
+  img :{
+    bottom:'10%',
+    left:'25%',
+    width: '50%',
+    height: '50%',
+    resizeMode: 'contain' 
   },
   btnText: {
     color: "#fff",

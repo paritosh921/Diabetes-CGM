@@ -4,10 +4,10 @@
     "slug": "Diabetes-CGM",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/CGM.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/CGM.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
